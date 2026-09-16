@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSB - Juan Sebastián Bar | Donostia</title>
+
+    <!-- Fuentes Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,700;1,400&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <!-- Iconos FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Estilos CSS -->
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+
+    <!-- NAVEGACIÓN EN MADERA OSCURA -->
+    <nav>
+        <div class="nav-container">
+            <a href="#inicio" class="logo">JSB</a>
+
+            <ul class="nav-links">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#historia">Nosotros</a></li>
+                <li><a href="#pintxos">Carta de Pintxos</a></li>
+                <li><a href="#eventos">Exposiciones</a></li>
+                <li><a href="#contacto">Dónde estamos</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- BANNER PRINCIPAL CON FONDO MADERA/CÁLIDO -->
+    <header id="inicio" class="hero-banner" style="background: linear-gradient(rgba(26, 18, 16, 0.75), rgba(26, 18, 16, 0.75)), url('imagenes/image1.jpeg') center/cover no-repeat;">
+        <div class="hero-box fade-in">
+            <span class="hero-tag">DONOSTIA - SAN SEBASTIÁN</span>
+            <h1>Juan Sebastián Bar</h1>
+            <p class="hero-subtitle">Tradición, Madera & Buen Ambiente</p>
+        </div>
+    </header>
+
+    <!-- SECCIÓN NUESTRA HISTORIA -->
+    <section id="historia" class="history-container fade-in">
+        <div class="history-grid">
+            <div class="history-image">
+                <img src="imagenes/image1.jpeg" alt="Fachada Juan Sebastián Bar">
+            </div>
+            <div class="history-text">
+                <span class="section-subtitle">NUESTRA HISTORIA</span>
+                <h2>Un clásico de la Calle Easo</h2>
+                <div class="gold-line"></div>
+                <p>
+                    El Juan Sebastián Bar, en la calle Easo nº 7, es uno de los bares más emblemáticos de Donostia. Fue diseñado originalmente en 1977 por el reconocido arquitecto Enrique Sarabia, conservando un característico aire setentero combinado con matices de estilo ibicenco que marcaron una época en la ciudad.
+                </p>
+                <p>
+                    Con el paso de los años, el local exigía una restauración respetuosa. Tuvimos claro que el Juan Sebastián Bar no debía reabrirse si era para perder su identidad, sino recuperarse. Tras la restauración de su fachada e interiores, devolvemos al JSB su brillo original: un punto de encuentro cálido donde la tradición hostelera donostiarra se fusiona con una barra cuidada al detalle.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN GASTRONOMÍA -->
+    <!-- SECCIÓN GASTRONOMÍA CON CARRUSEL -->
+    <section id="pintxos" class="pintxos-section fade-in">
+        <div class="section-title-container">
+            <span class="section-subtitle">GASTRONOMÍA LOCAL</span>
+            <h2>Nuestra Carta y Barra de Pintxos</h2>
+            <div class="gold-line center"></div>
+        </div>
+
+        <!-- CARRUSEL INTERACTIVO -->
+        <div class="tostas-carousel-container">
+    <button class="tostas-arrow prev-tosta" id="prevBtn"><i class="fa-solid fa-chevron-left"></i></button>
+    
+    <div class="tostas-track-container">
+        <div class="tostas-track" id="carouselTrack">
+            <div class="tosta-card">
+                <div class="img-wrapper"><img src="imagenes/salmon.jpeg" alt="Tosta de Salmón Ahumado"></div>
+                <h4>Tosta de Salmón Ahumado</h4>
+            </div>
+            <div class="tosta-card">
+                <div class="img-wrapper"><img src="imagenes/antxoapica.jpeg" alt="Sardina Antxoa-da"></div>
+                <h4>Sardina Antxoa-da</h4>
+            </div>
+            <div class="tosta-card">
+                <div class="img-wrapper"><img src="imagenes/sanrdinadulce.jpeg" alt="Sardina ahumada"></div>
+                <h4>Sardina Ahumada</h4>
+            </div>
+            <div class="tosta-card">
+                <div class="img-wrapper"><img src="imagenes/tostasard.jpeg" alt="Anchoa ahumada"></div>
+                <h4>Anchoa Ahumada</h4>
+            </div>
+            <div class="tosta-card">
+                <div class="img-wrapper"><img src="imagenes/foit.jpeg" alt="Foie micuit"></div>
+                <h4>Foie Micuit</h4>
+            </div>
+            <div class="tosta-card">
+                <div class="img-wrapper"><img src="imagenes/tomate.jpeg" alt="Tomate riquísimo"></div>
+                <h4>Tomate Riquísimo</h4>
+            </div>
+            <div class="tosta-card">
+                <div class="img-wrapper"><img src="imagenes/puntas.jpeg" alt="Puntas de jamón"></div>
+                <h4>Puntas de Jamón</h4>
+            </div>
+            <div class="tosta-card">
+                <div class="img-wrapper"><img src="imagenes/sardinillas.jpeg" alt="Sardinillas"></div>
+                <h4>Sardinillas</h4>
+            </div>
+            <div class="tosta-card">
+                <div class="img-wrapper"><img src="imagenes/donostiarra.jpeg" alt="Donostiarra"></div>
+                <h4>Donostiarra</h4>
+            </div>
+        </div>
+    </div>
+
+    <button class="tostas-arrow next-tosta" id="nextBtn"><i class="fa-solid fa-chevron-right"></i></button>
+</div>
+
+        <!-- PUNTOS INDICADORES DEL CARRUSEL -->
+        <div class="carousel-dots" id="carouselDots">
+            <span class="dot active"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+
+        <!-- CARTA PROFESIONAL CON TRADUCCIÓN AUTOMÁTICA ACTIVA -->
+        <div class="menu-container" id="carta-jsb">
+            <div class="menu-header">
+                <h3>CARTA JSB</h3>
+                <p class="terrace-note">* Suplemento de 0,20€ por consumo en terraza</p>
+            </div>
+
+            <!-- CATEGORÍA 1 -->
+            <div class="menu-category">
+                <h4><i class="fa-solid fa-bread-slice"></i> Tostas de la Casa</h4>
+                <div class="menu-grid">
+                    <div class="menu-item">
+                        <span class="item-name"><i class="fa-solid fa-fish"></i> Salmón ahumado</span>
+                        <span class="item-dots"></span>
+                        <span class="item-price">3,40 €</span>
+                    </div>
+                    <div class="menu-item">
+                        <span class="item-name"><i class="fa-solid fa-fish"></i> Sardina ahumada (con mermelada de tomate)</span>
+                        <span class="item-dots"></span>
+                        <span class="item-price">3,40 €</span>
+                    </div>
+                    <div class="menu-item">
+                        <span class="item-name"><i class="fa-solid fa-pepper-hot"></i> Sardina Antxoada (con salsa briquet)</span>
+                        <span class="item-dots"></span>
+                        <span class="item-price">3,40 €</span>
+                    </div>
+                    <div class="menu-item">
+                        <span class="item-name"><i class="fa-solid fa-fish"></i> Anchoa ahumada</span>
+                        <span class="item-dots"></span>
+                        <span class="item-price">3,40 €</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CATEGORÍA 2 -->
+            <div class="menu-category">
+                <h4><i class="fa-solid fa-utensils"></i> Raciones (Ideales para compartir)</h4>
+                <div class="menu-grid">
+                    <div class="menu-item">
+                        <span class="item-name"><i class="fa-solid fa-drumstick-bite"></i> Tacos de chorizo o salchichón</span>
+                        <span class="item-dots"></span>
+                        <span class="item-price">3,60 €</span>
+                    </div>
+                    <div class="menu-item">
+                        <span class="item-name"><i class="fa-solid fa-drumstick-bite"></i> ½ taco de chorizo o salchichón</span>
+                        <span class="item-dots"></span>
+                        <span class="item-price">2,50 €</span>
+                    </div>
+                    <div class="menu-item">
+                        <span class="item-name"><i class="fa-solid fa-fish-fins"></i> Ración de sardinillas (8 unidades)</span>
+                        <span class="item-dots"></span>
+                        <span class="item-price">5,50 €</span>
+                    </div>
+                    <div class="menu-item">
+                        <span class="item-name"><i class="fa-solid fa-fish-fins"></i> Ración de sardinillas (4 unidades)</span>
+                        <span class="item-dots"></span>
+                        <span class="item-price">3,50 €</span>
+                    </div>
+                    <div class="menu-item">
+                        <span class="item-name"><i class="fa-solid fa-bacon"></i> Puntas de jamón ibérico</span>
+                        <span class="item-dots"></span>
+                        <span class="item-price">10,00 €</span>
+                    </div>
+                    <div class="menu-item">
+                        <span class="item-name"><i class="fa-solid fa-align-center"></i> Paté de centollo gallego</span>
+                        <span class="item-dots"></span>
+                        <span class="item-price">12,00 €</span>
+                    </div>
+                    <div class="menu-item">
+                        <span class="item-name"><i class="fa-solid fa-award"></i> Foie micuit</span>
+                        <span class="item-dots"></span>
+                        <span class="item-price">10,00 €</span>
+                    </div>
+                    <div class="menu-item">
+                        <span class="item-name"><i class="fa-solid fa-water"></i> Mejillones</span>
+                        <span class="item-dots"></span>
+                        <span class="item-price">5,80 €</span>
+                    </div>
+                    <div class="menu-item">
+                        <span class="item-name"><i class="fa-solid fa-fish"></i> Octavillo de anchoas</span>
+                        <span class="item-dots"></span>
+                        <span class="item-price">10,00 €</span>
+                    </div>
+                    <div class="menu-item">
+                        <span class="item-name"><i class="fa-solid fa-star"></i> Anchoas "El Capricho"</span>
+                        <span class="item-dots"></span>
+                        <span class="item-price">22,00 €</span>
+                    </div>
+                    <div class="menu-item">
+                        <span class="item-name"><i class="fa-solid fa-seedling"></i> Tomate de agua riquísimo</span>
+                        <span class="item-dots"></span>
+                        <span class="item-price">7,50 €</span>
+                    </div>
+                    <div class="menu-item">
+                        <span class="item-name"><i class="fa-solid fa-bowl-food"></i> Ración de ensaladilla</span>
+                        <span class="item-dots"></span>
+                        <span class="item-price">5,50 €</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CATEGORÍA 3 -->
+            <div class="menu-category">
+                <h4><i class="fa-solid fa-glass-water"></i> Picoteo & Bebidas</h4>
+                <div class="menu-grid">
+                    <div class="menu-item">
+                        <span class="item-name"><i class="fa-solid fa-wine-glass"></i> Marianito o vermut especial</span>
+                        <span class="item-dots"></span>
+                        <span class="item-price">Consultar</span>
+                    </div>
+                    <div class="menu-item">
+                        <span class="item-name"><i class="fa-solid fa-cocktail"></i> Gin-tonic</span>
+                        <span class="item-dots"></span>
+                        <span class="item-price">Consultar</span>
+                    </div>
+                    <div class="menu-item">
+                        <span class="item-name"><i class="fa-solid fa-wine-bottle"></i> Tinto de verano</span>
+                        <span class="item-dots"></span>
+                        <span class="item-price">Consultar</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ENLACES DE TRADUCCIÓN FUNCIONALES -->
+            <div class="language-links">
+                <span class="lang-title"><i class="fa-solid fa-globe"></i> Ver la carta en otro idioma / Other languages:</span>
+                <div class="lang-buttons">
+                    <a href="https://translate.google.com/translate?sl=es&tl=en&u=https://juansebastianbar.com" target="_blank" class="lang-btn">🇬🇧 English Menu</a>
+                    <a href="https://translate.google.com/translate?sl=es&tl=fr&u=https://juansebastianbar.com" target="_blank" class="lang-btn">🇫🇷 Menu en Français</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN EXPOSICIONES (RESTAURADA A SU FORMATO ORIGINAL) -->
+    <section id="eventos" class="exhibitions-section fade-in">
+        <div class="section-title-container">
+            <span class="section-subtitle">ESPACIO CULTURAL Y EVENTOS</span>
+            <h2>Eventos privados y Exposiciones</h2>
+            <div class="gold-line center"></div>
+            <p class="section-desc">
+                En el Juan Sebastián Bar no solo nos apasiona la buena gastronomía, sino también el arte y la cultura. Nuestro espacio acoge periódicamente exposiciones de arte, muestras fotográficas y eventos culturales locales.
+            </p>
+        </div>
+
+        <div class="events-actions">
+            <a href="Exposiciones.html" class="btn-gold">VER GALERÍA DE EXPOSICIONES</a>
+        </div>
+    </section>
+
+    <!-- SECCIÓN DÓNDE ESTAMOS -->
+    <section id="contacto" class="contact-section fade-in">
+        <div class="section-title-container">
+            <span class="section-subtitle">VISÍTANOS</span>
+            <h2>Dónde estamos</h2>
+            <div class="gold-line center"></div>
+        </div>
+
+        <div class="contact-container-video">
+            <div class="map-wrapper">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2902.825828775443!2d-1.983944623415136!3d43.31792697112028!2m2!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd51a012a9e34ab5%3A0x6bd73305a41d9bf8!2sEaso%20Kalea%2C%207%2C%2020006%20Donostia%2C%20Gipuzkoa!5e0!3m2!1ses!2ses!4v1700000000000!5m2!1ses!2ses" width="100%" height="320" style="border:0; border-radius: 8px;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+
+            <div class="contact-card-box">
+                <div class="info-item">
+                    <strong>📍 Ubicación</strong>
+                    <p>Calle Easo nº 7, 20006<br>Donostia - San Sebastián, Gipuzkoa</p>
+                    <a href="https://maps.google.com/?q=Easo+Kalea+7+Donostia" target="_blank" class="btn-gold" style="margin-top: 12px; display: inline-block;">Cómo llegar</a>
+                </div>
+
+                <div class="info-item" style="margin-top: 25px;">
+                    <strong>🕒 Horario del Bar</strong>
+                    <p><strong>Lunes a jueves:</strong> 12:00 a 15:30 y de 18:30 a 23:00</p>
+                    <p><strong>Viernes y Sábados:</strong> 12:00 a 15:30 y de 18:30 a 1:20</p>
+                    <p><strong>Domingo:</strong> 12:00 a 15:00</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        &copy; JSB - Juan Sebastián Bar. Donostia - San Sebastián.
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
